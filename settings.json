@@ -1,0 +1,30 @@
+{
+    "servicerestart": "/usr/bin/true",
+    "serviceget": "/usr/local/bin/pluginget",
+    "serviceset": "/usr/local/bin/pluginset",
+    "options": {
+        "adddomain": {
+            "type": "add",
+            "name": "Add Domain",
+            "description": "Add new domain"
+        },
+        "deldomain": {
+            "type": "delete",
+            "name": "Delete Domain",
+            "description": "Remove domain"
+        },
+        "password": {
+            "type": "string",
+            "name": "password",
+            "description": "Root password of FreeNAS host."
+        }
+        "port": {
+            "type": "int",
+            "name": "port",
+            "description": "HTTP server port (must be exposed behind the domain)",
+            "range": "0-65535",
+            "default": "8675",
+            "readonly": true
+        }
+    }
+}

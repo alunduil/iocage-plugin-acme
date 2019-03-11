@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case $1 in
+	domain)
+		acme.sh
+		;;
+	password)
+		cat >/root/deploy_config <<-EOF
+		[deploy]
+		password = $1
+		EOF
+		;;
+	*)
+		echo "Unknown option"
+		;;
+esac
