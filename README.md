@@ -1,8 +1,8 @@
 # Description
 
-FreeNAS plugin for let's encrypt.
+FreeNAS plugin for ACME.
 
-Sets up FreeNAS wth a let's encrypt certificate for the web UI.
+Sets up FreeNAS wth an ACME certificate for the web UI.
 
 # Reporting Issues
 
@@ -13,4 +13,4 @@ reported.
 If you would like to contribute a fix or new feature, please submit a pull
 request.
 
-[Github]: https://github.com/alunduil/iocage-plugin-letsencrypt
+[Github]: https://github.com/alunduil/iocage-plugin-acme
